@@ -1,4 +1,5 @@
 import logo from "../assets/logo.jpg";
+import Button from "./UI/Button";
 
 export default function Header() {
   return (
@@ -8,7 +9,7 @@ export default function Header() {
         <h1>React Food App</h1>
       </div>
       <nav>
-        <button>Cart</button>
+        <Button textOnly={true}> CART </Button>
       </nav>
     </header>
   );
