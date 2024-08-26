@@ -24,7 +24,8 @@ export default function Cart() {
       <ul>
         {cart.items.map((item) => (
           <li key={item.id} className="cart-item">
-            {item.name} - {item.quantity}
+            {item.name} - {item.quantity} x{" "}
+            {currencyFormatter.format(item.price)}
           </li>
         ))}
       </ul>
