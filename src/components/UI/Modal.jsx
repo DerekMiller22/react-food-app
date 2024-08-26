@@ -8,6 +8,8 @@ export default function Modal({ children, open, className = "" }) {
     if (open) {
       dialog.current.showModal();
     }
+
+    return () => dialog.current.close();
   }, [open]);
 
   return createPortal(
