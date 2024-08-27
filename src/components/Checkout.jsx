@@ -38,6 +38,8 @@ export default function Checkout() {
         },
       }),
     });
+
+    userProgress.hideCheckout();
   }
 
   return (
